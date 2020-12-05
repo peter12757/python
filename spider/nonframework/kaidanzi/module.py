@@ -28,10 +28,21 @@ class XmlOrderForm():
     """
     docstring
     """
-    orderNo:str = None# 采购编号
-    orderNum:str = None# 物料编号
-    order# 工作令
-    # 规格/型号
-    # 报交数
-    # 单价
+    caiGouNo:str = ""    # 采购编号
+    wuLiaoNo:str = ""   # 物料编号
+    gongZhuoLingNo:str = ""   # 工作令
+    xingHao:str = ""  # 规格/型号
+    num:str = ""    # 报交数
+    price:str = ""  # 单价
+
+    def __init__(self,caigoubianhao:str,wuliaobianhao:str,gongzhuoling:str,xinghao:str,num:str,price:str):
+        super().__init__()
+        self.caiGouNo = caigoubianhao
+        self.wuLiaoNo = wuliaobianhao
+        self.gongZhuoLingNo = gongzhuoling
+        self.xingHao = xinghao
+        self.num = num
+        self.price = price
+        
+
     pass

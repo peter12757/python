@@ -5,7 +5,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support.select import Select
 import time
-import os
 from module import HttpOrderForm
 
 bstUrl = "https://srm.shbst.com:8081/"
