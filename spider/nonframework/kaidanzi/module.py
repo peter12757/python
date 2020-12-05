@@ -1,6 +1,6 @@
 
 
-class OrderForm():
+class HttpOrderForm():
     """
     订单
     """
@@ -19,4 +19,19 @@ class OrderForm():
         self.company = company
 
 
+    pass
+
+
+
+
+class XmlOrderForm():
+    """
+    docstring
+    """
+    orderNo:str = None# 采购编号
+    orderNum:str = None# 物料编号
+    order# 工作令
+    # 规格/型号
+    # 报交数
+    # 单价
     pass

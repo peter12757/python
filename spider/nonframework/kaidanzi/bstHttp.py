@@ -6,7 +6,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support.select import Select
 import time
 import os
-from module import OrderForm
+from module import HttpOrderForm
 
 bstUrl = "https://srm.shbst.com:8081/"
 
@@ -17,7 +17,7 @@ class BstHttp():
     userName:str = ""
     userPassword:str = ""
     sleepTime:float = 0.5 
-    orderForm = []
+    httpOrderForm = []
 
     def __init__(self,name,password) -> None:
         self.driver = webdriver.Chrome(executable_path=drivePath)
@@ -63,8 +63,8 @@ class BstHttp():
         del table_row[0]
         for row in table_row:
             items = row.find_elements_by_tag_name("td")
-            item = OrderForm(items[0].text,items[1].text,items[2].text,items[3].text,items[5].text)
-            self.orderForm.append(item)
+            item = HttpOrderForm(items[0].text,items[1].text,items[2].text,items[3].text,items[5].text)
+            self.httpOrderForm.append(item)
         
         pass
 
@@ -72,8 +72,8 @@ class BstHttp():
         """
         填充每个订单的数据
         """
-        for order in self.orderForm:
-            print = self.driver.find_element_by_id("ContentPlaceHolder1_gvOrderView_hkPrint_"+str(self.orderForm.index(order)))
+        for order in self.httpOrderForm:
+            print = self.driver.find_element_by_id("ContentPlaceHolder1_gvOrderView_hkPrint_"+str(self.httpOrderForm.index(order)))
             order.chromeHandle = self.driver.current_window_handle
             print.click()
             time.sleep(1)
@@ -83,7 +83,7 @@ class BstHttp():
             pass
         pass
 
-    def printOrder(self, order:OrderForm):
+    def printOrder(self, order:HttpOrderForm):
         """
         docstring
         """
@@ -98,8 +98,9 @@ class BstHttp():
         """
         docstring
         """
-        
-        self.driver.close()
+        for tab in self.driver.window_handles:
+            self.driver.close()
+            time.sleep(1)
         pass
 
     
