@@ -5,18 +5,19 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support.select import Select
 import time
-from module import HttpOrderForm
+from module import *
+import json
 
 bstUrl = "https://srm.shbst.com:8081/"
 
-drivePath = "./spider/nonframework/kaidanzi/chromedriver"
+drivePath = "./spider/nonframework/kaidanzi/chromedriver.exe"
 
-class BstHttp():
+class BstHttp(): 
     driver:WebDriver = None
     userName:str = ""
     userPassword:str = ""
     sleepTime:float = 0.5 
-    httpOrderForm = []
+    httpOrderForm:[] = []
 
     def __init__(self,name,password) -> None:
         self.driver = webdriver.Chrome(executable_path=drivePath)
@@ -56,31 +57,81 @@ class BstHttp():
         time.sleep(self.sleepTime)
         pass
 
+
     def collectTableData(self):
+        """
+        docstring
+        """
         table = self.driver.find_element_by_id("ContentPlaceHolder1_gvOrderView")
         table_row = table.find_elements_by_tag_name("tr")
         del table_row[0]
-        for row in table_row:
-            items = row.find_elements_by_tag_name("td")
-            item = HttpOrderForm(items[0].text,items[1].text,items[2].text,items[3].text,items[5].text)
-            self.httpOrderForm.append(item)
-        
-        pass
+        index = len(table_row)
+        print(str(index)+" need to collect")
+        for i in range(index):
+            table = self.driver.find_element_by_id("ContentPlaceHolder1_gvOrderView")
+            table_row = table.find_elements_by_tag_name("tr")
+            del table_row[0]
+            self.fillTableFirstData(table_row[0])
 
-    def fillData(self):
+
+
+
+    def fillTableFirstData(self, row):
         """
-        填充每个订单的数据
+        docstring
         """
-        for order in self.httpOrderForm:
-            print = self.driver.find_element_by_id("ContentPlaceHolder1_gvOrderView_hkPrint_"+str(self.httpOrderForm.index(order)))
-            order.chromeHandle = self.driver.current_window_handle
-            print.click()
-            time.sleep(1)
-            self.printOrder(order)
-            self.driver.switch_to_window(self.driver.window_handles[0])
-            time.sleep(1)
-            pass
-        pass
+        items = row.find_elements_by_tag_name("td")
+        item = HttpOrderForm(items[0].text,items[1].text,items[2].text,items[3].text,items[5].text)
+        self.httpOrderForm.append(item)
+        print = self.driver.find_element_by_id("ContentPlaceHolder1_gvOrderView_hkPrint_0")
+        print.click()
+        time.sleep(2)
+        self.driver.switch_to_window(self.driver.window_handles[1])
+        self.fillDetailData(item)
+        self.printOrder(item)
+        self.driver.close()
+        self.driver.switch_to_window(self.driver.window_handles[0])
+
+
+    def fillDetailData(self, order:HttpOrderForm):
+        """
+        docstring
+        """
+        tbody = self.driver.find_element_by_xpath('//div/table/tbody')
+        items = tbody.find_elements_by_tag_name('tr')
+        itemsNum = len(items)
+        print("总共有几行："+str(itemsNum))
+        orderDeatainum = itemsNum - 20
+        print("单子有几项："+str(orderDeatainum))
+        for index in range(13,orderDeatainum+13):
+            item = self.driver.find_element_by_xpath("/html/body/form/div[3]/span/div/table/tbody/tr["+str(index)+"]")
+            detailTD = item.find_elements_by_tag_name("td")
+            orderDetail = XmlOrderForm(order.caigouNo,self.getgongzuoling(detailTD[6].text),
+            detailTD[16].text,
+            self.getxinghao(detailTD[2].text)+":"+detailTD[4].text,
+            detailTD[10].text,
+            detailTD[13].text)
+            order.detailinfo.append(orderDetail)
+        print(order)
+
+
+    def getgongzuoling(self,gongzuoling:str):
+        """
+        docstring
+        """
+        if gongzuoling == '天津':
+            return gongzuoling
+        else:
+            return ''
+
+
+    def getxinghao(self, xinghao:str):
+        """
+        docstring
+        """
+        return xinghao
+
+
 
     def printOrder(self, order:HttpOrderForm):
         """
@@ -110,10 +161,13 @@ if __name__ == "__main__":
     http.login()
     http.selBeiEnKe()
     http.collectTableData()
-    http.fillData()
-
-    time.sleep(1)
-    http.exit()
+    jsonStr = json.dumps(http.httpOrderForm) 
+    with open("./record.json","w") as f:
+        f.write(jsonStr)
+    # time.sleep(1)
+    # http.exit()
+    while True:
+        time.sleep(1)
 
     
     

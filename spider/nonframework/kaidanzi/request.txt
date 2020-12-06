@@ -1,0 +1,288 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>
+	采购单明细打印
+</title></head>
+<body>
+    <form method="post" action="./OrderListDPrint.aspx?BHID=WbccXeaa1accWbdd5aeeYcff" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTI1OTExNDcxNA8WAh4EQkhJRAUGMTU1MTkwFgICAw9kFgICBQ8PFgYeDWZyeFJlcG9ydERvbmVnHg1mcnhSZXBvcnRHdWlkBSQ5MTFiNTQ3MC1lMDViLTQ5MTItYTk4Yy05NWJkYjBiOGE3YzgeC2ZyeEhUTUxEb25lZxYCHgVzdHlsZQVrdmVydGljYWwtYWxpZ246dG9wO3RleHQtYWxpZ246bGVmdDttYXJnaW46MXB4O2Rpc3BsYXk6aW5saW5lLWJsb2NrO19vdmVyZmxvdzpoaWRkZW47em9vbToxOypkaXNwbGF5OmlubGluZTsWAmYPZBYCAgEPZBYCAgcPZBYCZg8QZGQWAWZkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYHBQx3ZWJScHQkY3RsMDcFDHdlYlJwdCRjdGwxMQUMd2ViUnB0JGN0bDE3BQx3ZWJScHQkY3RsMjAFDHdlYlJwdCRjdGwyMgUMd2ViUnB0JGN0bDI5BQx3ZWJScHQkY3RsMzFYn39cz6PwuKJ7dggEQQg7Dklx7VYY3O8zOkWxzHbJQw==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=8D5jFNWDw1HNVFsMo8XQFvL8uIFeEe4ku956TKwuoLPlTRP2nmdeTcsOvYSsUJ27MpgKqGD7WxNwXL4MQRQA6Ljqk-83yT96q1zECjQ98rQ1&amp;t=637110536437816177" type="text/javascript"></script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="8CF746D1">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAB6iSfVZiVxWFF69Jh0SNKBBVBKve7+EVAagHwhzDDx4d/6cBmGLFjgrjOe5syfGdffhS1rs5LAUtr9yEXs/4q0pAi4tBobuNwAfN4WW3iRzO5xLOTSaYZh1hs9gnewLtMkvMFUdCQTCUZXmhpJ8CroRAo3mHOMj0YdVvv1B5zxfKyOmgBG4zfVXtwL0OV+QxYUB4ZvV9et6OazmV0RhbnBzKCi9wwvtd0g90C4jK/OSzyZvEilzAINZ+BIxyrWFzgBDL0+dohQvx91+OPyCwqDAIvd5qd8EGyxRCSi9NM1OLeriPj2+6MXE9OKM4Lx76ohgztwqQYbTq7th+FMYfoABUTVTgDNmfHLkZU3BIj4TAQxmjHofUnI8ZKniXE6+oHDuogGkYswWfSZo9MjiU9dkLLXFl5cU1T+Fk+T28q4+kHZ9fkx/PWuaFVlY+5+h0/3eS4QlP2bFC3gZv5JRt4JHWHhhy7IDgRCRAynb0lepgazyOnEqfBRWBaqn2fHbbuD2hsReBHheBURD1F3K2tPv9hWlriZ4WwVmwXYBoiGbcinQf8VWz0u6Y7FtGHl3tiWfAzQ3jy/Em0bzJOD7TBq+uenZZbm9vOqUcFj2g61ZPVavWxOz/XH9GrrbmO3VmHVlceWWAOyRodecON6alVwDM4xq4KyZc//b0gjQVp+f1w==">
+</div>
+    <div>
+        
+        
+        <span id="webRpt" style="display:inline-block;color:Black;background-color:#CCFFCC;font-family:新宋体;height:100%;width:100%;vertical-align:top;text-align:left;margin:1px;display:inline-block;_overflow:hidden;zoom:1;*display:inline;"><table width="100%" height="28" bgcolor="#ECE9D8" cellpadding="0" cellspacing="0" border="0">
+	<tbody><tr height="4">
+	</tr>
+	<tr height="19" valign="middle" align="center">
+		<td width="6">&nbsp;</td>
+		<td width="125" align="left"><select name="webRpt$ctl05" title="Export" style="font-family:Tahoma;font-size:8pt;width:120px;">
+			<option value="pdf">Adobe Acrobat</option>
+			<option value="rtf">Rich Text file</option>
+			<option value="mht">MHT file (web-archive)</option>
+			<option value="xps">Microsoft XPS file</option>
+			<option value="xlsx">Excel 2007 file</option>
+			<option value="docx">Microsoft Word 2007 file</option>
+			<option value="pptx">PowerPoint 2007 file</option>
+			<option value="xls">XML (Excel) table</option>
+			<option value="ods">OpenOffice Calc</option>
+			<option value="odt">OpenOffice Writer</option>
+			<option value="dbf">DBF table</option>
+			<option value="csv">CSV file</option>
+			<option value="txt">Text File/Matrix Printer</option>
+
+		</select></td>
+		<td width="16"><input type="image" name="webRpt$ctl07" title="Export" src="/WebResource.axd?d=OxZTeOAYkQrrCHx9cXUOd8n6CewPiilGpPDHepWVM3kiOC9O_zNOTWCHUHgbA9ftlEQQ6467wLeSR3LjxC29K1AxqYAbM8NSwrupF3UYVkmhRKgIWx4bx_WfJsZE6T5KvYdqLQg45c1AQ7cp-v2qfZ1CjXiH2Lm9HuxYOQQwz8k1&amp;t=637170929669738687" style="height:16px;width:16px;"></td>
+		<td width="10">&nbsp;</td>
+		<td width="10">&nbsp;</td>
+		<td width="16"><input type="image" name="webRpt$ctl11" title="Print" src="/WebResource.axd?d=P599vimiS4L24DcMuu6akkauDLfxwMwARy-333fOqZVrSDP025AeBML_PCvFtZfslcihqzxPNRqHJgwk8K993GwgbpUSPUM1vlieTohd0tpZxICOprvbet6kUEvFzNuFpbm9OPEtCn6wHtN5iW618nzGw4OTHDc3f40w9XYfMLQ1&amp;t=637170929669738687" onclick="frxOpenPrint('FastReport.Export.aspx?frxprint=pdf&amp;frxreport=911b5470-e05b-4912-a98c-95bdb0b8a7c8'); return false;" style="height:16px;width:16px;"></td>
+		<td width="10">&nbsp;</td>
+		<td width="95" align="right"><select name="webRpt$ctl14" onchange="javascript:setTimeout('__doPostBack(\'webRpt$ctl14\',\'\')', 0)" title="Zoom" style="font-family:Tahoma;font-size:8pt;width:90px;">
+			<option value="25">25%</option>
+			<option value="50">50%</option>
+			<option value="75">75%</option>
+			<option selected="selected" value="100">100%</option>
+			<option value="150">150%</option>
+			<option value="200">200%</option>
+			<option value="300">300%</option>
+
+		</select></td>
+		<td width="10">&nbsp;</td>
+		<td width="20"><input type="image" name="webRpt$ctl17" title="Refresh" src="/WebResource.axd?d=Jm-xObxr9FswgUMdWdlQYC9qINRzlQauH9DvjOLxKG0SKsHbgEjMEvQcxiZFeu4uw27zPEo3VU4xkFiYlr4_Oi41-iIOuaKGmkR83-Sq3JAZ-47XVZn6dp5AuggC7yJKbNt5KI9P70zLqBmK9XWtGy0NhAqLUcDsMqDWj0zORcM1&amp;t=637170929669738687" style="height:16px;width:16px;"></td>
+		<td width="5">&nbsp;</td>
+		<td width="20"><input type="image" name="webRpt$ctl20" disabled="disabled" title="First Page" class="aspNetDisabled" src="/WebResource.axd?d=8EtfXJIq8AFxrThf6Mui5Zwl1aKc5-VRYBYsQfT1AZKbbxHycFU3dWIVIODKCQ_dEcpSppb8tkVKagD6tlnQYR4uJIt3Di2e-u490-tQBD-hnbCyPU1TDTZ1zL-o-6kg9Wd79UTRZlrS6dFvOhCtG2uwSkpY0WbRtpZ2FLYPd_Q1&amp;t=637170929669738687" style="height:16px;width:16px;"></td>
+		<td width="20"><input type="image" name="webRpt$ctl22" disabled="disabled" title="Prior Page" class="aspNetDisabled" src="/WebResource.axd?d=B2Dqqz9Izlwz0jkbSPVD9ymrr4CETMUSY6pHkwK-iylhwqRbEoPVEQ-hYxy_PX5TCJlU4ILAr0R_D_UCcn5XpMpSpXjgRnMPLerov6iYV6N8GnqNd1ZPtfxLwGDtQ_RO67sTyU-br4NAYKqKoJw0RgTcdLz0mPkZpIQq5GNzD_81&amp;t=637170929669738687" style="height:16px;width:16px;"></td>
+		<td width="2">&nbsp;</td>
+		<td width="30"><input name="webRpt$ctl25" type="text" value="1" size="3" onchange="javascript:setTimeout('__doPostBack(\'webRpt$ctl25\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" style="font-family:Tahoma;font-size:8pt;width:30px;text-align:center;width:30;"></td>
+		<td width="40"><span style="font-family:Tahoma;font-size:8pt;">of 1</span></td>
+		<td width="20"><input type="image" name="webRpt$ctl29" disabled="disabled" title="Next Page" class="aspNetDisabled" src="/WebResource.axd?d=n3kIWCQAjuJ5zOxe4PI0kqa0G-qtJ0bsDdxIWvv_tQnOVQy5tfTeFfaGmAK6UaPrCfrelqKv4BiQk8DTmUOlhaJugNdbRdaJrc4roneEIAli-BOndrotzrcBjq-A6WFS5pvCnMSNLe_jZNsfkHlvZs7i-6XEe0eGhIip661vsF41&amp;t=637170929669738687" style="height:16px;width:16px;"></td>
+		<td width="20"><input type="image" name="webRpt$ctl31" disabled="disabled" title="Last Page" class="aspNetDisabled" src="/WebResource.axd?d=bEEkvE1IrQfumadIRM6WgUabkrmXrDOgbfpJuizYj9TacZlG5LkBPUD76l6vDBTqD6sGWGkA1wkpNmnWb0HY7_hhD2VXyvocY5K9hvrdivUWFpqKffIJjGix6S4mnNIpVeo_Cd2vsVnRne4xBXdND3KvrvssL0QhqEh6KjBAJeY1&amp;t=637170929669738687" style="height:16px;width:16px;"></td>
+		<td align="right">&nbsp;</td>
+		<td width="6">&nbsp;</td>
+	</tr>
+	<tr height="5">
+	</tr>
+</tbody></table>
+<div style="overflow:auto;"><style type="text/css"><!-- 
+.webRpts0 { font-style:normal;font-family:宋体;font-size:12px;color:#FFFFFF;background-color:transparent;text-align:Left;vertical-align:Top;overflow:hidden;}
+.webRpts1 { font-style:normal;font-family:Arial;font-size:1px;color:#FFFFFF;background-color:transparent;text-align:Left;vertical-align:Top;overflow:hidden;}
+.webRpts2 { font-style:normal;font-family:微软雅黑;font-size:35px;color:#000000;background-color:transparent;text-align:Center;vertical-align:Bottom;word-wrap:break-word;overflow:hidden;padding-left:2px;padding-right:2px;}
+.webRpts3 { font-style:normal;font-family:微软雅黑;font-size:13px;color:#000000;background-color:transparent;text-align:Center;vertical-align:Bottom;word-wrap:break-word;overflow:hidden;border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;border-top-width:1px;border-top-color:#000000;border-top-style:solid;border-left-width:1px;border-left-color:#000000;border-left-style:solid;border-right-width:1px;border-right-color:#000000; border-right-style:solid;padding-left:2px;padding-right:2px;}
+.webRpts4 { font-style:normal;font-family:微软雅黑;font-size:13px;color:#000000;background-color:transparent;text-align:Left;vertical-align:Bottom;word-wrap:break-word;overflow:hidden;border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;border-top-width:1px;border-top-color:#000000;border-top-style:solid;border-left-width:1px;border-left-color:#000000;border-left-style:solid;border-right-width:1px;border-right-color:#000000; border-right-style:solid;padding-left:2px;padding-right:2px;}
+.webRpts5 { font-style:normal;font-family:微软雅黑;font-size:12px;color:#000000;background-color:transparent;text-align:Center;vertical-align:Middle;word-wrap:break-word;overflow:hidden;border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;border-top-width:1px;border-top-color:#000000;border-top-style:solid;border-left-width:1px;border-left-color:#000000;border-left-style:solid;border-right-width:1px;border-right-color:#000000; border-right-style:solid;padding-left:2px;padding-right:2px;}
+.webRpts6 { font-style:normal;font-family:微软雅黑;font-size:12px;color:#000000;background-color:transparent;text-align:Center;vertical-align:Middle;overflow:hidden;border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;border-top-width:1px;border-top-color:#000000;border-top-style:solid;border-left-width:1px;border-left-color:#000000;border-left-style:solid;border-right-width:1px;border-right-color:#000000; border-right-style:solid;padding-left:2px;padding-right:2px;}
+.webRpts7 { font-style:normal;font-family:微软雅黑;font-size:12px;color:#000000;background-color:transparent;text-align:Center;vertical-align:Middle;overflow:hidden;border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;border-top-width:1px;border-top-color:#000000;border-top-style:solid;border-left-width:1px;border-left-color:#000000;border-left-style:solid;border-right-width:1px;border-right-color:#000000; border-right-style:solid;padding-left:2px;padding-right:2px;}
+.webRpts8 { font-style:normal;font-family:微软雅黑;font-size:12px;color:#000000;background-color:transparent;text-align:Center;vertical-align:Middle;word-wrap:break-word;overflow:hidden;border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;border-top-width:1px;border-top-color:#000000;border-top-style:solid;border-left-width:1px;border-left-color:#000000;border-left-style:solid;border-right-width:1px;border-right-color:#000000; border-right-style:solid;padding-left:2px;padding-right:2px;}
+.webRpts9 { font-style:normal;font-family:微软雅黑;font-size:12px;color:#000000;background-color:transparent;text-align:Center;vertical-align:Middle;overflow:hidden;border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;border-top-width:1px;border-top-color:#000000;border-top-style:solid;border-left-width:1px;border-left-color:#000000;border-left-style:solid;border-right-width:1px;border-right-color:#000000; border-right-style:solid;padding-left:2px;padding-right:2px;}
+.webRpts10 { font-style:normal;font-family:微软雅黑;font-size:13px;color:#000000;background-color:transparent;text-align:Left;vertical-align:Top;word-wrap:break-word;overflow:hidden;padding-left:2px;padding-right:2px;}
+.webRpts11 { font-style:normal;font-family:微软雅黑;font-size:12px;color:#000000;background-color:transparent;text-align:Left;vertical-align:Middle;word-wrap:break-word;overflow:hidden;padding-left:2px;padding-right:2px;}
+.webRpts12 { font-style:normal;font-family:微软雅黑;font-size:12px;color:#000000;background-color:transparent;text-align:Center;vertical-align:Middle;word-wrap:break-word;overflow:hidden;padding-left:2px;padding-right:2px;}
+.webRpts13 { font-style:normal;font-family:微软雅黑;font-size:13px;color:#000000;background-color:transparent;text-align:Left;vertical-align:Bottom;word-wrap:break-word;overflow:hidden;border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;border-top-width:1px;border-top-color:#000000;border-top-style:solid;border-left-width:0;border-right-width:1px;border-right-color:#000000; border-right-style:solid;padding-left:2px;padding-right:2px;}
+.webRpts14 { font-style:normal;font-family:微软雅黑;font-size:13px;color:#000000;background-color:transparent;text-align:Center;vertical-align:Bottom;word-wrap:break-word;overflow:hidden;border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;border-top-width:1px;border-top-color:#000000;border-top-style:solid;border-left-width:0;border-right-width:1px;border-right-color:#000000; border-right-style:solid;padding-left:2px;padding-right:2px;}
+.webRpts15 { font-style:normal;font-family:微软雅黑;font-size:13px;color:#000000;background-color:transparent;text-align:Center;vertical-align:Bottom;word-wrap:break-word;overflow:hidden;border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;border-top-width:0;border-left-width:1px;border-left-color:#000000;border-left-style:solid;border-right-width:1px;border-right-color:#000000; border-right-style:solid;padding-left:2px;padding-right:2px;}
+.webRpts16 { font-style:normal;font-family:微软雅黑;font-size:13px;color:#000000;background-color:transparent;text-align:Left;vertical-align:Bottom;word-wrap:break-word;overflow:hidden;border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;border-top-width:0;border-left-width:1px;border-left-color:#000000;border-left-style:solid;border-right-width:1px;border-right-color:#000000; border-right-style:solid;padding-left:2px;padding-right:2px;}
+.webRpts17 { font-style:normal;font-family:微软雅黑;font-size:13px;color:#000000;background-color:transparent;text-align:Left;vertical-align:Bottom;word-wrap:break-word;overflow:hidden;border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;border-top-width:0;border-left-width:0;border-right-width:1px;border-right-color:#000000; border-right-style:solid;padding-left:2px;padding-right:2px;}
+.webRpts18 { font-style:normal;font-family:微软雅黑;font-size:13px;color:#000000;background-color:transparent;text-align:Center;vertical-align:Bottom;word-wrap:break-word;overflow:hidden;border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;border-top-width:0;border-left-width:0;border-right-width:1px;border-right-color:#000000; border-right-style:solid;padding-left:2px;padding-right:2px;}
+.webRpts19 { font-style:normal;font-family:微软雅黑;font-size:12px;color:#000000;background-color:transparent;text-align:Center;vertical-align:Middle;word-wrap:break-word;overflow:hidden;border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;border-top-width:0;border-left-width:1px;border-left-color:#000000;border-left-style:solid;border-right-width:1px;border-right-color:#000000; border-right-style:solid;padding-left:2px;padding-right:2px;}
+.webRpts20 { font-style:normal;font-family:微软雅黑;font-size:12px;color:#000000;background-color:transparent;text-align:Center;vertical-align:Middle;word-wrap:break-word;overflow:hidden;border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;border-top-width:0;border-left-width:0;border-right-width:1px;border-right-color:#000000; border-right-style:solid;padding-left:2px;padding-right:2px;}
+.webRpts21 { font-style:normal;font-family:微软雅黑;font-size:12px;color:#000000;background-color:transparent;text-align:Center;vertical-align:Middle;overflow:hidden;border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;border-top-width:0;border-left-width:1px;border-left-color:#000000;border-left-style:solid;border-right-width:1px;border-right-color:#000000; border-right-style:solid;padding-left:2px;padding-right:2px;}
+.webRpts22 { font-style:normal;font-family:微软雅黑;font-size:12px;color:#000000;background-color:transparent;text-align:Center;vertical-align:Middle;overflow:hidden;border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;border-top-width:0;border-left-width:0;border-right-width:1px;border-right-color:#000000; border-right-style:solid;padding-left:2px;padding-right:2px;}
+.webRpts23 { font-style:normal;font-family:微软雅黑;font-size:12px;color:#000000;background-color:transparent;text-align:Center;vertical-align:Middle;overflow:hidden;border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;border-top-width:0;border-left-width:1px;border-left-color:#000000;border-left-style:solid;border-right-width:1px;border-right-color:#000000; border-right-style:solid;padding-left:2px;padding-right:2px;}
+.webRpts24 { font-style:normal;font-family:微软雅黑;font-size:12px;color:#000000;background-color:transparent;text-align:Center;vertical-align:Middle;overflow:hidden;border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;border-top-width:0;border-left-width:0;border-right-width:1px;border-right-color:#000000; border-right-style:solid;padding-left:2px;padding-right:2px;}
+.webRpts25 { font-style:normal;font-family:微软雅黑;font-size:12px;color:#000000;background-color:transparent;text-align:Center;vertical-align:Middle;word-wrap:break-word;overflow:hidden;border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;border-top-width:1px;border-top-color:#000000;border-top-style:solid;border-left-width:0;border-right-width:1px;border-right-color:#000000; border-right-style:solid;padding-left:2px;padding-right:2px;}
+.webRpts26 { font-style:normal;font-family:微软雅黑;font-size:12px;color:#000000;background-color:transparent;text-align:Center;vertical-align:Middle;word-wrap:break-word;overflow:hidden;border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;border-top-width:1px;border-top-color:#000000;border-top-style:solid;border-left-width:0;border-right-width:1px;border-right-color:#000000; border-right-style:solid;padding-left:2px;padding-right:2px;}
+.webRpts27 { font-style:normal;font-family:微软雅黑;font-size:12px;color:#000000;background-color:transparent;text-align:Center;vertical-align:Middle;overflow:hidden;border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;border-top-width:1px;border-top-color:#000000;border-top-style:solid;border-left-width:0;border-right-width:1px;border-right-color:#000000; border-right-style:solid;padding-left:2px;padding-right:2px;}
+.webRpts28 { font-style:normal;font-family:微软雅黑;font-size:12px;color:#000000;background-color:transparent;text-align:Center;vertical-align:Middle;word-wrap:break-word;overflow:hidden;border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;border-top-width:0;border-left-width:1px;border-left-color:#000000;border-left-style:solid;border-right-width:1px;border-right-color:#000000; border-right-style:solid;padding-left:2px;padding-right:2px;}
+.webRpts29 { font-style:normal;font-family:微软雅黑;font-size:12px;color:#000000;background-color:transparent;text-align:Center;vertical-align:Middle;word-wrap:break-word;overflow:hidden;border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;border-top-width:0;border-left-width:0;border-right-width:1px;border-right-color:#000000; border-right-style:solid;padding-left:2px;padding-right:2px;}
+.webRpts30 { font-style:normal;font-family:微软雅黑;font-size:12px;color:#000000;background-color:transparent;text-align:Center;vertical-align:Middle;overflow:hidden;border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;border-top-width:0;border-left-width:1px;border-left-color:#000000;border-left-style:solid;border-right-width:1px;border-right-color:#000000; border-right-style:solid;padding-left:2px;padding-right:2px;}
+.webRpts31 { font-style:normal;font-family:微软雅黑;font-size:12px;color:#000000;background-color:transparent;text-align:Center;vertical-align:Middle;overflow:hidden;border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;border-top-width:0;border-left-width:0;border-right-width:1px;border-right-color:#000000; border-right-style:solid;padding-left:2px;padding-right:2px;}
+--></style>
+<a name="PageN1"></a><table width="1115px;" align="center" border="0" cellspacing="0" cellpadding="0" style="table-layout: fixed;">
+<tbody><tr style="height: 1px"><td width="9px;"></td><td width="76px;"></td><td width="9px;"></td><td width="28px;"></td><td width="19px;"></td><td width="66px;"></td><td width="66px;"></td><td width="38px;"></td><td width="9px;"></td><td width="19px;"></td><td width="38px;"></td><td width="28px;"></td><td width="57px;"></td><td width="47px;"></td><td width="9px;"></td><td width="9px;"></td><td width="38px;"></td><td width="38px;"></td><td width="28px;"></td><td width="9px;"></td><td width="19px;"></td><td width="38px;"></td><td width="57px;"></td><td width="56px;"></td><td width="19px;"></td><td width="38px;"></td><td width="9px;"></td><td width="9px;"></td><td width="9px;"></td><td width="19px;"></td><td width="9px;"></td><td width="76px;"></td><td width="3px;"></td><td width="101px;"></td><td width="10px;"></td></tr>
+<tr style="height:9px;">
+<td colspan="11" class="webRpts0" style="font-size:1px;" nowrap="">&nbsp;</td>
+<td colspan="10" rowspan="2" class="webRpts2">采 购 计 划 单</td>
+<td colspan="14" class="webRpts0" style="font-size:1px;" nowrap="">&nbsp;</td>
+</tr>
+<tr style="height:38px;">
+<td rowspan="20" class="webRpts0" style="font-size:1px;" nowrap="">&nbsp;</td>
+<td colspan="3" class="webRpts1" style="font-size:1px;" nowrap=""><img src="FastReport.Export.aspx?frximg=dca0befc9dbcf7d4a40741669d2caded" alt=""></td>
+<td colspan="7" rowspan="3" class="webRpts0" style="font-size:1px;" nowrap="">&nbsp;</td>
+<td colspan="6" rowspan="3" class="webRpts0" style="font-size:1px;" nowrap="">&nbsp;</td>
+<td colspan="6" rowspan="2" class="webRpts1" style="font-size:1px;" nowrap=""><img src="FastReport.Export.aspx?frximg=12a2ddea0ed3fbbbb10204ffcbeeb3ae" alt=""></td>
+<td colspan="2" rowspan="3" class="webRpts0" style="font-size:1px;" nowrap="">&nbsp;</td>
+</tr>
+<tr style="height:9px;">
+<td colspan="3" rowspan="2" class="webRpts0" style="font-size:1px;" nowrap="">&nbsp;</td>
+<td colspan="10" rowspan="2" class="webRpts0" style="font-size:1px;" nowrap="">&nbsp;</td>
+</tr>
+<tr style="height:1px;">
+<td colspan="6" class="webRpts0" style="font-size:1px;" nowrap="">&nbsp;</td>
+</tr>
+<tr style="height:19px;">
+<td colspan="2" class="webRpts3">采购单号</td>
+<td colspan="6" class="webRpts13">S20120255</td>
+<td colspan="3" class="webRpts14">提 出 人</td>
+<td colspan="4" class="webRpts13">方彬</td>
+<td colspan="3" class="webRpts14">提出时间</td>
+<td colspan="5" class="webRpts13">2020/12/5 10:00:01</td>
+<td colspan="5" class="webRpts14">邮 编</td>
+<td colspan="5" class="webRpts13" style="font-size:1px;">&nbsp;</td>
+<td rowspan="15" class="webRpts0" style="font-size:1px;" nowrap="">&nbsp;</td>
+</tr>
+<tr style="height:19px;">
+<td colspan="2" class="webRpts15">供应商</td>
+<td colspan="6" class="webRpts17">上海佐和五金电器厂</td>
+<td colspan="3" class="webRpts18">联 系 人</td>
+<td colspan="4" class="webRpts17" style="font-size:1px;">&nbsp;</td>
+<td colspan="3" class="webRpts18">电 话</td>
+<td colspan="5" class="webRpts17">15000228980</td>
+<td colspan="5" class="webRpts18">传 真</td>
+<td colspan="5" class="webRpts17">58095399</td>
+</tr>
+<tr style="height:19px;">
+<td colspan="2" class="webRpts15">地   址</td>
+<td colspan="31" class="webRpts17">上海市浦东新区祝桥镇高永村858号</td>
+</tr>
+<tr style="height:1px;">
+<td colspan="33" class="webRpts0" style="font-size:1px;" nowrap="">&nbsp;</td>
+</tr>
+<tr style="height:19px;">
+<td colspan="33" class="webRpts4">计划单明细</td>
+</tr>
+<tr style="height:19px;">
+<td class="webRpts19">工作令</td>
+<td colspan="3" class="webRpts20">流水号</td>
+<td class="webRpts20">名称</td>
+<td class="webRpts20">图号</td>
+<td colspan="3" class="webRpts20">型号</td>
+<td colspan="2" class="webRpts20">规格</td>
+<td class="webRpts20">材质</td>
+<td class="webRpts20">层站数</td>
+<td colspan="3" class="webRpts20">系统</td>
+<td colspan="3" class="webRpts20">报交日期</td>
+<td colspan="2" class="webRpts22" nowrap="">数量</td>
+<td class="webRpts22" nowrap="">米数</td>
+<td class="webRpts22" nowrap="">总米数</td>
+<td colspan="4" class="webRpts24" nowrap="">无税价</td>
+<td colspan="3" class="webRpts20">单位</td>
+<td class="webRpts20">金额</td>
+<td colspan="2" class="webRpts20">备注</td>
+</tr>
+<tr style="height:7px;">
+<td colspan="33" class="webRpts0" style="font-size:1px;" nowrap="">&nbsp;</td>
+</tr>
+<tr style="height:34px;">
+<td class="webRpts5">SHJ2012-05</td>
+<td colspan="3" class="webRpts25">3562</td>
+<td class="webRpts25">固定夹子</td>
+<td class="webRpts25">DAA336A2</td>
+<td colspan="3" class="webRpts25">马攀φD=16.1</td>
+<td colspan="2" class="webRpts25">马攀φD=16.1</td>
+<td class="webRpts25">3621000054</td>
+<td class="webRpts25" style="font-size:1px;">&nbsp;</td>
+<td colspan="3" class="webRpts25" style="font-size:1px;">&nbsp;</td>
+<td colspan="3" class="webRpts26">20/12/11</td>
+<td colspan="2" class="webRpts27" nowrap="">5000</td>
+<td class="webRpts27" nowrap="">0.0000</td>
+<td class="webRpts27" nowrap="">0</td>
+<td colspan="4" class="webRpts27" nowrap="">0.114000000000</td>
+<td colspan="3" class="webRpts25">只</td>
+<td class="webRpts25">570</td>
+<td colspan="2" class="webRpts25">天津</td>
+</tr>
+<tr style="height:50px;">
+<td class="webRpts19">SHJ2012-05</td>
+<td colspan="3" class="webRpts20">74464</td>
+<td class="webRpts20">紧固件</td>
+<td class="webRpts20" style="font-size:1px;">&nbsp;</td>
+<td colspan="3" class="webRpts20">XWH168A1固定夹子</td>
+<td colspan="2" class="webRpts20">XWH168A1固定夹子</td>
+<td class="webRpts20">3621000407</td>
+<td class="webRpts20" style="font-size:1px;">&nbsp;</td>
+<td colspan="3" class="webRpts20" style="font-size:1px;">&nbsp;</td>
+<td colspan="3" class="webRpts29">20/12/11</td>
+<td colspan="2" class="webRpts31" nowrap="">5000</td>
+<td class="webRpts31" nowrap="">0.0000</td>
+<td class="webRpts31" nowrap="">0</td>
+<td colspan="4" class="webRpts31" nowrap="">0.350000000000</td>
+<td colspan="3" class="webRpts20">件</td>
+<td class="webRpts20">1750</td>
+<td colspan="2" class="webRpts20">天津</td>
+</tr>
+<tr style="height:19px;">
+<td colspan="21" class="webRpts15">金额合计(未税)</td>
+<td colspan="12" class="webRpts31" nowrap="">2320</td>
+</tr>
+<tr style="height:5px;">
+<td colspan="33" class="webRpts0" style="font-size:1px;" nowrap="">&nbsp;</td>
+</tr>
+<tr style="height:19px;">
+<td colspan="25" class="webRpts10">1、相关要求按双方签定的采购协议与质量协议为准。 2、请收到后予以确认，如超过24小时未答复，则认为许可。</td>
+<td colspan="8" rowspan="2" class="webRpts0" style="font-size:1px;" nowrap="">&nbsp;</td>
+</tr>
+<tr style="height:13px;">
+<td colspan="25" class="webRpts0" style="font-size:1px;" nowrap="">&nbsp;</td>
+</tr>
+<tr style="height:19px;">
+<td colspan="7" rowspan="4" class="webRpts0" style="font-size:1px;" nowrap="">&nbsp;</td>
+<td colspan="3" class="webRpts10">制表：</td>
+<td colspan="6" rowspan="2" class="webRpts0" style="font-size:1px;" nowrap="">&nbsp;</td>
+<td colspan="2" class="webRpts10">审核：</td>
+<td colspan="6" rowspan="4" class="webRpts0" style="font-size:1px;" nowrap="">&nbsp;</td>
+<td colspan="4" class="webRpts10">批准：</td>
+<td colspan="5" rowspan="2" class="webRpts0" style="font-size:1px;" nowrap="">&nbsp;</td>
+</tr>
+<tr style="height:437px;">
+<td colspan="3" rowspan="3" class="webRpts0" style="font-size:1px;" nowrap="">&nbsp;</td>
+<td colspan="2" class="webRpts0" style="font-size:1px;" nowrap="">&nbsp;</td>
+<td colspan="4" rowspan="3" class="webRpts0" style="font-size:1px;" nowrap="">&nbsp;</td>
+</tr>
+<tr style="height:19px;">
+<td colspan="4" rowspan="2" class="webRpts11">  共1页</td>
+<td colspan="3" rowspan="2" class="webRpts11">第1页</td>
+<td rowspan="2" class="webRpts0" style="font-size:1px;" nowrap="">&nbsp;</td>
+<td rowspan="2" class="webRpts0" style="font-size:1px;" nowrap="">&nbsp;</td>
+<td colspan="5" class="webRpts12">上海贝恩科电缆有限公司</td>
+</tr>
+<tr style="height:9px;">
+<td colspan="5" class="webRpts0" style="font-size:1px;" nowrap="">&nbsp;</td>
+</tr>
+</tbody></table>
+</div></span>
+    </div>
+    
+<script type="text/javascript">
+function frxOpenPrint(url) {
+window.open(url, '_blank','resizable,scrollbars,width=700px,height=500px'); };
+</script>
+</form>
+
+
+</body></html>
