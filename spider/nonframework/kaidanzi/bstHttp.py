@@ -161,7 +161,8 @@ if __name__ == "__main__":
     http.login()
     http.selBeiEnKe()
     http.collectTableData()
-    jsonStr = json.dumps(http.httpOrderForm) 
+    data = {'data':http.httpOrderForm}
+    jsonStr = json.dumps(data,default=lambda o: o.__dict__)
     with open("./record.json","w") as f:
         f.write(jsonStr)
     # time.sleep(1)

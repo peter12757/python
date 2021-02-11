@@ -1,5 +1,6 @@
 from openpyxl import load_workbook
 from module import *
+import json
 
 
 class Xlsx():
@@ -10,20 +11,21 @@ class Xlsx():
   httpOrderForm:[] = []
 
   def __init__(self,httpOrderForm:[]) -> None:
-        self.httpOrderForm = httpOrderForm
+    self.httpOrderForm = httpOrderForm
   
   pass
 
 
 
-
-
-
+ 
 
 
 
 
 if __name__ == "__main__":
-    
-    excel = Xlsx()
-    pass
+  jsonStr = ""
+  with open("./record.json","r") as f:
+	  jsonStr = f.read(1000)
+  print(jsonStr)
+  excel = Xlsx(json.loads(jsonStr,))
+  pass
